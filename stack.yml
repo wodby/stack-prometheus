@@ -1,0 +1,11 @@
+name: prometheus
+title: Prometheus
+icon: prometheus
+
+services:
+- name: prometheus
+  title: Prometheus
+  service: prometheus
+  volumes:
+  - name: data
+    size: 10
