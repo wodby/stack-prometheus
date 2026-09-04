@@ -17,12 +17,14 @@ composition for Prometheus.
 ## Service definitions
 
 - [Prometheus service](https://github.com/wodby/service-prometheus)
+- [Grafana service](https://github.com/wodby/service-grafana)
 
 ## What's included
 
 | Component / service | Default configuration |
 | --- | --- |
 | Prometheus<br>`prometheus` | optional; enabled by default; volumes: `data` 10 GB |
+| Grafana<br>`grafana` | optional; disabled by default; volumes: `data` 10 GB; links: `prometheus` → `prometheus` |
 
 Enabled optional services are selected by default but can be excluded when an
 app is created. Disabled optional services are available but not selected by
@@ -44,6 +46,9 @@ integrations.
 Review service versions, storage, links, and optional components when creating
 the application. The same stack can be reused across development, staging, and
 production environments.
+
+Grafana is available as an optional component and is disabled by default.
+When enabled, its Prometheus data source is provisioned automatically.
 
 ## Maintain a custom version
 
