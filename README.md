@@ -11,6 +11,7 @@ composition for Prometheus.
 
 - [Prometheus stack on Wodby](https://wodby.com/stacks/prometheus)
 - [Browse Wodby application stacks](https://wodby.com/stacks)
+- [Prometheus stack guide](https://wodby.com/docs/2.0/stacks/catalog/prometheus/)
 - [Wodby stack documentation](https://wodby.com/docs/2.0/stacks/)
 - [Stack manifest reference](https://wodby.com/docs/2.0/stacks/template/)
 
