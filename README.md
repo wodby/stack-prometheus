@@ -25,7 +25,7 @@ composition for Prometheus.
 | Component / service | Default configuration |
 | --- | --- |
 | Prometheus<br>`prometheus` | optional; enabled by default; volumes: `data` 10 GB |
-| Grafana<br>`grafana` | optional; disabled by default; volumes: `data` 10 GB; links: `prometheus` → `prometheus` |
+| Grafana<br>`grafana` | optional; enabled by default; volumes: `data` 10 GB; links: `prometheus` → `prometheus` |
 
 Enabled optional services are selected by default but can be excluded when an
 app is created. Disabled optional services are available but not selected by
@@ -48,8 +48,8 @@ Review service versions, storage, links, and optional components when creating
 the application. The same stack can be reused across development, staging, and
 production environments.
 
-Grafana is available as an optional component and is disabled by default.
-When enabled, its Prometheus data source is provisioned automatically.
+Grafana is enabled by default, with its Prometheus data source provisioned
+automatically. You can exclude it when creating the application.
 
 ## Maintain a custom version
 
