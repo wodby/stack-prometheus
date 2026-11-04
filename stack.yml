@@ -14,7 +14,6 @@ services:
 - name: grafana
   title: Grafana
   service: grafana
-  disabled: true
   links:
   - name: prometheus
     service: prometheus
